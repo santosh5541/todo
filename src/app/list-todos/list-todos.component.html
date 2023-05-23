@@ -1,0 +1,16 @@
+<h1>My Todos</h1>
+
+<div class="container">
+<table class="table table-bordered">
+    <tr>
+      <th>Description</th>
+      <th>Target Date</th>
+      <th>is Completed</th>
+    </tr>
+    <tr *ngFor="let todo of todos">
+      <td>{{todo.description}}</td>
+      <td>{{todo.targetDate | date | uppercase}}</td>
+      <td>{{todo.done}}</td>
+    </tr>
+    </table>
+  </div>
